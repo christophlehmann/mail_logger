@@ -1,0 +1,29 @@
+{
+    "name": "christophlehmann/mail-logger",
+    "type": "typo3-cms-extension",
+    "description": "Log mails to sys_log table",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/christophlehmann/typo3-mail-logger",
+    "keywords": ["TYPO3", "Mail", "logging"],
+    "authors": [
+        {
+            "name": "Christoph Lehmann",
+            "role": "Developer",
+            "email": "post@christoplehmann.eu"
+        }
+    ],
+    "require": {
+        "typo3/cms-backend": "^10.4 || ^11.5",
+        "typo3/cms-core": "^10.4 || ^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lemming\\MailLogger\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "mail_logger"
+        }
+    }
+}

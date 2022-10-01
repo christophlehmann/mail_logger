@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Lemming\MailLogger\:
+    resource: '../Classes/*'
+
+#  Lemming\Mail2Syslog\EventListener\Mail2Syslog:
+#    tags:
+#      - name: event.listener
+#        identifier: 'mail2syslog'
+#        event: TYPO3\CMS\Core\Mail\Event\AfterMailerSentMessageEvent
